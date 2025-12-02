@@ -128,7 +128,7 @@ On Error Resume Next
                 'ok   .Open "POST", "https://api.telegram.org/bot996303276:AAGzG4KOztClAl2jbjG99BPSh3QzSANW9Lw/sendMessage?", False
                 ' .Open "POST", "https://api.telegram.org/bot996303276:AAGzG4KOztClAl2jbjG99BPSh3QzSANW9Lw/getMe", False
                 '{"ok":true,"result":{"id":996303276,"is_bot":true,"first_name":"scadatest","username":"scadatest1_bot", _
-                "can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}
+                '"can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}
                 .SetRequestHeader "Content-Type", "application/json"
                 .Send (strPostData)
                 'GetSessionId = .responseText
